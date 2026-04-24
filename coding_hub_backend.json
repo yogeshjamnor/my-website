@@ -14,7 +14,8 @@
   "services": {
     "backend_link": "http://YOUR_PUBLIC_IP:5000",
     "ollama_link": "http://YOUR_PUBLIC_IP:11434",
-    "gemini_local_proxy": "http://YOUR_PUBLIC_IP:11434"
+    "gemini_local_proxy": "http://YOUR_PUBLIC_IP:11434",
+    "contact":"http://api.abc.contact/contact",
   },
   "projects": [
     {

@@ -16,8 +16,149 @@
     "ollama_link": "http://YOUR_PUBLIC_IP:11434",
     "gemini_local_proxy": "http://YOUR_PUBLIC_IP:11434"
   },
-  "metadata": {
-    "last_updated": "2026-04-24",
-    "environment": "testing"
-  }
+  "projects": [
+    {
+      "id": 1,
+      "title": "Firmware Analysis Tool",
+      "icon": "bi bi-pc-display-horizontal",
+      "subtitle": "Python (PySide6, FastAPI, Bash)",
+      "description": "A professional desktop toolkit for secure, non-destructive firmware analysis of Android/Linux images, featuring a modular Python backend and robust UI.",
+      "features": [
+        "Hybrid PySide6 UI with modular Python backend for extensibility",
+        "Automated extraction pipeline (lpunpack, payload-dumper-go) for partitioned .img files",
+        "Read-only mounting with secure sudo prompt and user isolation",
+        "Custom command execution with output logging for traceability",
+        "Workspace-driven management of extracted, mounted, and analyzed data",
+        "Scalable backend modules: extractor, mounter, analyzer, archiver",
+        "Emphasis on safe, non-destructive inspection and filesystem analysis"
+      ],
+      "techStack": ["Python", "PySide6", "FastAPI", "Bash", "lpunpack", "payload-dumper-go"],
+      "useCases": [
+        "Firmware reverse engineering",
+        "Partition analysis",
+        "Security research",
+        "Debugging"
+      ],
+      "type": "Desktop Application",
+      "link": "https://github.com/yogeshjamnor/Firmware-Analysis-tool",
+      "tags": ["Python", "Desktop", "Security", "Forensics"]
+    },
+    {
+      "id": 2,
+      "title": "AI Personal Assistant",
+      "icon": "bi bi-robot",
+      "subtitle": "Flutter, Dart, Gemini API, Firebase",
+      "description": "A mobile-first AI assistant app with chat, live news, YouTube, and a knowledge hub — built for offline-first use and real-time sync.",
+      "features": [
+        "Conversational Gemini AI chat with context-aware responses",
+        "YouTube and Live News integration for seamless media consumption",
+        "Knowledge hub with categorized notes: Code, Theory, CMDs, Patterns",
+        "Google Notes sync and multi-language support",
+        "Offline-first architecture with Firebase Firestore real-time sync",
+        "Modular navigation and persistent dark mode"
+      ],
+      "techStack": ["Flutter", "Dart", "Firebase", "Gemini API", "Wikipedia API", "Webview"],
+      "useCases": [
+        "Personal productivity",
+        "AI-assisted learning",
+        "Live news consumption",
+        "Knowledge management"
+      ],
+      "type": "Mobile Application",
+      "link": "https://github.com/yogeshjamnor",
+      "tags": ["AI", "Flutter", "Firebase", "Mobile"]
+    },
+    {
+      "id": 3,
+      "title": "PayrollGenix",
+      "icon": "bi bi-cash-stack",
+      "subtitle": "React, Node.js, Express, MongoDB, JWT",
+      "description": "A secure, scalable payroll management system with full CRUD, JWT authentication, role-based access, and automated salary workflows.",
+      "features": [
+        "Full CRUD for employees, payroll, and roles",
+        "JWT authentication and granular role-based access",
+        "RESTful Express.js APIs with MongoDB persistence",
+        "Automated salary calculation and email notifications",
+        "CI/CD deployment on Vercel for rapid updates"
+      ],
+      "techStack": ["React", "Node.js", "Express", "MongoDB", "JWT", "REST API", "Vercel"],
+      "useCases": [
+        "Payroll management",
+        "HR automation",
+        "Salary workflows",
+        "Enterprise dashboards"
+      ],
+      "type": "Full Stack Web Application",
+      "link": "https://github.com/yogeshjamnor",
+      "tags": ["React", "Node.js", "MongoDB", "JWT", "Express"]
+    },
+    {
+      "id": 4,
+      "title": "AI Personal Notes",
+      "icon": "bi bi-journal-richtext",
+      "subtitle": "React, Firebase, Python, Gemini API",
+      "description": "An AI-powered notes app with live context extraction, Gemini/Wikipedia integration, and real-time sync for smarter note-taking.",
+      "features": [
+        "Live context extraction and smart note suggestions",
+        "Gemini and Wikipedia APIs for intelligent data generation",
+        "Firebase Authentication and Firestore for secure, real-time sync",
+        "Python backend for automated news extraction and summarization"
+      ],
+      "techStack": ["React", "Firebase", "Python", "Gemini API", "Wikipedia API"],
+      "useCases": [
+        "AI-assisted note-taking",
+        "Live news summarization",
+        "Knowledge base building",
+        "Student productivity"
+      ],
+      "type": "Full Stack Web Application",
+      "link": "https://github.com/yogeshjamnor",
+      "tags": ["AI", "Firebase", "Python", "React"]
+    },
+    {
+      "id": 5,
+      "title": "SnapCart",
+      "icon": "bi bi-cart3",
+      "subtitle": "Node.js, Express, MongoDB, Multer, EJS",
+      "description": "A lightweight image catalogue for eCommerce with secure uploads, server-side rendering, and robust XSS protection.",
+      "features": [
+        "Secure file/image uploads with Multer",
+        "EJS templating for fast server-side rendering",
+        "Input validation and XSS protection for data security",
+        "Optimized for small business product listings"
+      ],
+      "techStack": ["Node.js", "Express", "MongoDB", "Multer", "EJS"],
+      "useCases": [
+        "eCommerce catalogue",
+        "Image management",
+        "Server-side storefronts",
+        "Small business listings"
+      ],
+      "type": "Web Application",
+      "link": "https://github.com/yogeshjamnor",
+      "tags": ["Node.js", "MongoDB", "eCommerce", "Express"]
+    },
+    {
+      "id": 6,
+      "title": "Seasons Garden",
+      "icon": "bi bi-flower1",
+      "subtitle": "PHP, MySQL, Bootstrap, SMTP",
+      "description": "A feature-rich eCommerce site for farming tools and nursery products with OTP login, dynamic listings, and a secure admin panel.",
+      "features": [
+        "OTP-based email authentication using SMTP",
+        "Dynamic product listing and admin panel (PHP/MySQL)",
+        "Responsive UI with Bootstrap for all devices"
+      ],
+      "techStack": ["PHP", "MySQL", "Bootstrap", "SMTP", "OTP Login"],
+      "useCases": [
+        "Agri-eCommerce",
+        "Nursery product listings",
+        "Admin product management",
+        "Secure customer login"
+      ],
+      "type": "Web Application",
+      "link": "https://github.com/yogeshjamnor",
+      "tags": ["PHP", "MySQL", "eCommerce", "Bootstrap"]
+    }
+  ]
 }

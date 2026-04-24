@@ -1,11 +1,23 @@
-github=https://github.com/yogeshjamnor
-phone=+91 9112279190
-email=yogeshjamnor@gmail.com
-linkedin=https://www.linkedin.com/in/yogeshjamnor/
-location=Pune, Maharashtra, India
-address=sawardari, pune, maharashtra, india
-
-# ollama  URL
-gemini_link=http://localhost:11434
-backend_link=http://localhost:5000
-ollama_link:http://localhost:11434
+{
+  "user_info": {
+    "name": "Yogesh Jamnor",
+    "location": "Pune, Maharashtra, India",
+    "links": {
+      "github": "https://github.com/yogeshjamnor",
+      "linkedin": "https://www.linkedin.com/in/yogeshjamnor/"
+    },
+    "contact": {
+      "phone": "+919112279190",
+      "email": "yogeshjamnor@gmail.com"
+    }
+  },
+  "services": {
+    "backend_link": "http://YOUR_PUBLIC_IP:5000",
+    "ollama_link": "http://YOUR_PUBLIC_IP:11434",
+    "gemini_local_proxy": "http://YOUR_PUBLIC_IP:11434"
+  },
+  "metadata": {
+    "last_updated": "2026-04-24",
+    "environment": "testing"
+  }
+}

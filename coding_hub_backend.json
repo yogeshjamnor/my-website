@@ -67,7 +67,7 @@
         "Knowledge management"
       ],
       "type": "Mobile Application",
-      "link": "https://github.com/yogeshjamnor",
+      "link": "",
       "tags": ["AI", "Flutter", "Firebase", "Mobile"]
     },
     {
@@ -91,7 +91,7 @@
         "Enterprise dashboards"
       ],
       "type": "Full Stack Web Application",
-      "link": "https://github.com/yogeshjamnor",
+      "link": "Payrollgenix",
       "tags": ["React", "Node.js", "MongoDB", "JWT", "Express"]
     },
     {
@@ -114,7 +114,7 @@
         "Student productivity"
       ],
       "type": "Full Stack Web Application",
-      "link": "https://github.com/yogeshjamnor",
+      "link": "AiModel",
       "tags": ["AI", "Firebase", "Python", "React"]
     },
     {
@@ -137,7 +137,7 @@
         "Small business listings"
       ],
       "type": "Web Application",
-      "link": "https://github.com/yogeshjamnor",
+      "link": "",
       "tags": ["Node.js", "MongoDB", "eCommerce", "Express"]
     },
     {
@@ -159,7 +159,7 @@
         "Secure customer login"
       ],
       "type": "Web Application",
-      "link": "https://github.com/yogeshjamnor",
+      "link": "Season-s-Garden",
       "tags": ["PHP", "MySQL", "eCommerce", "Bootstrap"]
     }
   ]

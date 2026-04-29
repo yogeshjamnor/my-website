@@ -7,12 +7,84 @@
     "About Page": {
       "notes": "Standard profile layout with SEO optimization.",
       "code": "const About = () => (\n  <section>\n    <h1>About Us</h1>\n    <p>This is a dynamic profile page.</p>\n  </section>\n);"
+    },
+    "Navbar Logic": {
+      "notes": "Responsive navbar with toggle state.",
+      "code": "const Navbar = () => {\n  const [isOpen, setIsOpen] = useState(false);\n  return (\n    <nav>\n      <button onClick={() => setIsOpen(!isOpen)}>Menu</button>\n      <ul className={isOpen ? 'show' : 'hide'}>\n        <li>Home</li>\n      </ul>\n    </nav>\n  );\n};"
+    },
+    "Custom UseFetch Hook": {
+      "notes": "Reusable hook for API calls with loading/error states.",
+      "code": "const useFetch = (url) => {\n  const [data, setData] = useState(null);\n  useEffect(() => {\n    fetch(url).then(res => res.json()).then(setData);\n  }, [url]);\n  return data;\n};"
+    },
+    "Local Storage Hook": {
+      "notes": "Syncing state with browser local storage.",
+      "code": "const [val, setVal] = useState(() => localStorage.getItem('key') || '');\nuseEffect(() => {\n  localStorage.setItem('key', val);\n}, [val]);"
+    },
+    "Debounced Input": {
+      "notes": "Prevent excessive API calls on search.",
+      "code": "useEffect(() => {\n  const handler = setTimeout(() => setSearch(query), 500);\n  return () => clearTimeout(handler);\n}, [query]);"
+    },
+    "Intersection Observer": {
+      "notes": "Detect when an element enters the viewport (Lazy Loading).",
+      "code": "const observer = new IntersectionObserver(([entry]) => {\n  if (entry.isIntersecting) console.log('Visible');\n});\nobserver.observe(myRef.current);"
     }
   },
   "Python": {
     "CSV Processor": {
       "notes": "Using the built-in CSV module for data extraction.",
       "code": "import csv\nwith open('data.csv', mode='r') as file:\n    reader = csv.DictReader(file)\n    for row in reader:\n        print(row['name'])"
+    },
+    "JSON API Fetch": {
+      "notes": "Fetch data from an external API using requests.",
+      "code": "import requests\nresponse = requests.get('https://api.test.com/data')\ndata = response.json()\nprint(data)"
+    },
+    "List Comprehension": {
+      "notes": "Shorthand for creating modified lists.",
+      "code": "numbers = [1, 2, 3, 4, 5]\nsquares = [x**2 for x in numbers if x > 2]"
+    },
+    "File Rename Bulk": {
+      "notes": "Batch rename files in a directory using os module.",
+      "code": "import os\nfor file in os.listdir('.'):\n    if file.endswith('.txt'):\n        os.rename(file, f'new_{file}')"
+    },
+    "Thread Execution": {
+      "notes": "Running tasks in parallel for speed.",
+      "code": "import threading\ndef task(): print('Done')\nt = threading.Thread(target=task)\nt.start()"
+    },
+    "Flask Basic API": {
+      "notes": "Minimal web server setup.",
+      "code": "from flask import Flask\napp = Flask(__name__)\n@app.route('/')\ndef home(): return 'Hello World'\napp.run()"
+    }
+  },
+  "JavaScript": {
+    "Deep Clone Object": {
+      "notes": "Cloning nested objects without reference links.",
+      "code": "const clone = JSON.parse(JSON.stringify(original));"
+    },
+    "Async Await Wrapper": {
+      "notes": "Standard way to handle promises cleanly.",
+      "code": "async function load() {\n  try {\n    const res = await fetch(url);\n    const data = await res.json();\n  } catch (err) {\n    console.error(err);\n  }\n}"
+    },
+    "Array De-duplication": {
+      "notes": "Removing duplicate items from an array.",
+      "code": "const unique = [...new Set([1, 2, 2, 3])];"
+    },
+    "Query Params Getter": {
+      "notes": "Extracting values from the URL string.",
+      "code": "const params = new URLSearchParams(window.location.search);\nconst id = params.get('id');"
+    }
+  },
+  "Android/Flutter": {
+    "Shared Preferences": {
+      "notes": "Store small key-value data on device.",
+      "code": "final prefs = await SharedPreferences.getInstance();\nawait prefs.setInt('counter', 10);"
+    },
+    "ListBuilder View": {
+      "notes": "Efficiently rendering large scrollable lists.",
+      "code": "ListView.builder(\n  itemCount: items.length,\n  itemBuilder: (context, index) => Text(items[index]),\n);"
+    },
+    "API Provider Setup": {
+      "notes": "Managing state across the app.",
+      "code": "class UserProvider with ChangeNotifier {\n  String user = 'Guest';\n  void login(n) { user = n; notifyListeners(); }\n}"
     }
   }
 }

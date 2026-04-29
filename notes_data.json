@@ -1,1 +1,152 @@
-
+{
+  "javascript": {
+    "ES6_features": {
+      "notes": "Introduced modern syntax like arrow functions, let/const, classes, modules.",
+      "sample": "const add = (a, b) => a + b;"
+    },
+    "promises": {
+      "notes": "Used for handling asynchronous operations.",
+      "sample": "fetch(url).then(res => res.json()).then(data => console.log(data));"
+    }
+  },
+  "react": {
+    "hooks": {
+      "notes": "Functions that let you use state and lifecycle features in functional components.",
+      "sample": "const [count, setCount] = useState(0);"
+    },
+    "components": {
+      "notes": "Reusable UI building blocks.",
+      "sample": "function App() { return <h1>Hello</h1>; }"
+    }
+  },
+  "python": {
+    "list_comprehension": {
+      "notes": "Compact way to process lists.",
+      "sample": "[x*x for x in range(5)]"
+    },
+    "decorators": {
+      "notes": "Modify behavior of functions.",
+      "sample": "@login_required\ndef dashboard(): pass"
+    }
+  },
+  "java": {
+    "streams": {
+      "notes": "Process collections using functional style.",
+      "sample": "list.stream().filter(x -> x > 5).collect(Collectors.toList());"
+    },
+    "oop": {
+      "notes": "Object-oriented programming with classes and objects.",
+      "sample": "class Car { String brand; }"
+    }
+  },
+  "c++": {
+    "pointers": {
+      "notes": "Store memory addresses.",
+      "sample": "int* p = &x;"
+    },
+    "stl": {
+      "notes": "Standard Template Library for data structures.",
+      "sample": "vector<int> v = {1,2,3};"
+    }
+  },
+  "csharp": {
+    "linq": {
+      "notes": "Query collections in a SQL-like way.",
+      "sample": "var result = list.Where(x => x > 5).ToList();"
+    },
+    "async_await": {
+      "notes": "Handle asynchronous code.",
+      "sample": "await Task.Run(() => DoWork());"
+    }
+  },
+  "go": {
+    "goroutines": {
+      "notes": "Lightweight threads.",
+      "sample": "go func() { fmt.Println(\"Hello\") }();"
+    },
+    "channels": {
+      "notes": "Communication between goroutines.",
+      "sample": "ch := make(chan int)"
+    }
+  },
+  "rust": {
+    "ownership": {
+      "notes": "Memory safety without garbage collection.",
+      "sample": "let s = String::from(\"hello\");"
+    },
+    "pattern_matching": {
+      "notes": "Match control flow.",
+      "sample": "match x { 1 => \"one\", _ => \"other\" }"
+    }
+  },
+  "php": {
+    "arrays": {
+      "notes": "Flexible data structure.",
+      "sample": "$arr = [1, 2, 3];"
+    },
+    "oop": {
+      "notes": "Supports object-oriented programming.",
+      "sample": "class Car { public $brand; }"
+    }
+  },
+  "ruby": {
+    "blocks": {
+      "notes": "Anonymous functions.",
+      "sample": "[1,2,3].each { |x| puts x }"
+    },
+    "symbols": {
+      "notes": "Lightweight immutable strings.",
+      "sample": ":name"
+    }
+  },
+  "kotlin": {
+    "null_safety": {
+      "notes": "Prevents null pointer exceptions.",
+      "sample": "var name: String? = null"
+    },
+    "data_classes": {
+      "notes": "Auto-generate boilerplate code.",
+      "sample": "data class User(val name: String)"
+    }
+  },
+  "swift": {
+    "optionals": {
+      "notes": "Handle absence of values.",
+      "sample": "var name: String?"
+    },
+    "closures": {
+      "notes": "Self-contained blocks of functionality.",
+      "sample": "{ (a: Int, b: Int) -> Int in return a + b }"
+    }
+  },
+  "typescript": {
+    "types": {
+      "notes": "Static typing on top of JavaScript.",
+      "sample": "let num: number = 5;"
+    },
+    "interfaces": {
+      "notes": "Define structure of objects.",
+      "sample": "interface User { name: string; }"
+    }
+  },
+  "sql": {
+    "joins": {
+      "notes": "Combine rows from multiple tables.",
+      "sample": "SELECT * FROM A JOIN B ON A.id = B.id;"
+    },
+    "aggregation": {
+      "notes": "Perform calculations on data.",
+      "sample": "SELECT COUNT(*) FROM users;"
+    }
+  },
+  "bash": {
+    "scripting": {
+      "notes": "Automate tasks in shell.",
+      "sample": "echo \"Hello World\""
+    },
+    "loops": {
+      "notes": "Iterate over data.",
+      "sample": "for i in {1..5}; do echo $i; done"
+    }
+  }
+}

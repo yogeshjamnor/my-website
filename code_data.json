@@ -1,0 +1,18 @@
+{
+  "React": {
+    "Contact Page": {
+      "notes": "Functional component using a controlled form state.",
+      "code": "import React, { useState } from 'react';\n\nconst Contact = () => {\n  const [form, setForm] = useState({ name: '', msg: '' });\n  return (\n    <form>\n      <input onChange={(e) => setForm({...form, name: e.target.value})} />\n      <textarea onChange={(e) => setForm({...form, msg: e.target.value})} />\n    </form>\n  );\n};"
+    },
+    "About Page": {
+      "notes": "Standard profile layout with SEO optimization.",
+      "code": "const About = () => (\n  <section>\n    <h1>About Us</h1>\n    <p>This is a dynamic profile page.</p>\n  </section>\n);"
+    }
+  },
+  "Python": {
+    "CSV Processor": {
+      "notes": "Using the built-in CSV module for data extraction.",
+      "code": "import csv\nwith open('data.csv', mode='r') as file:\n    reader = csv.DictReader(file)\n    for row in reader:\n        print(row['name'])"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "Linux": {
+    "System Update": {
+      "notes": "Update package lists and upgrade all installed packages.",
+      "cmd": "sudo apt update && sudo apt upgrade -y"
+    },
+    "Port Kill": {
+      "notes": "Find and kill a process running on a specific port (e.g., 3000).",
+      "cmd": "sudo lsof -i :3000\nkill -9 <PID>"
+    }
+  },
+  "MongoDB": {
+    "Database Backup": {
+      "notes": "Dump a specific database to a backup folder.",
+      "cmd": "mongodump --db=my_database --out=/backup/directory"
+    },
+    "User Creation": {
+      "notes": "Create a new admin user with readWrite roles.",
+      "cmd": "db.createUser({ user: 'admin', pwd: 'password', roles: ['readWrite'] })"
+    }
+  },
+  "React Setup": {
+    "Vite Project": {
+      "notes": "The fastest way to initialize a modern React app.",
+      "cmd": "npm create vite@latest my-app -- --template react"
+    },
+    "Tailwind Install": {
+      "notes": "Initialize Tailwind CSS in an existing React project.",
+      "cmd": "npm install -D tailwindcss postcss autoprefixer\nnpx tailwindcss init -p"
+    }
+  }
+}

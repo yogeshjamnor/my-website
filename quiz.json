@@ -1,0 +1,68 @@
+{
+  "Linux Mastery": {
+    "Process Management": {
+      "question": "Which command sequence is used to identify a process on a specific port and force-terminate it?",
+      "options": [
+        "sudo apt update && upgrade",
+        "sudo lsof -i :port && kill -9 <PID>",
+        "ps aux | grep port",
+        "systemctl stop service"
+      ],
+      "answer": "sudo lsof -i :port && kill -9 <PID>"
+    },
+    "Maintenance": {
+      "question": "What is the purpose of the '-y' flag in the command 'sudo apt upgrade -y'?",
+      "options": [
+        "To yield the process to background",
+        "To check for yesterday's updates",
+        "To automatically say 'yes' to prompts",
+        "To verify the package signature"
+      ],
+      "answer": "To automatically say 'yes' to prompts"
+    }
+  },
+  "MongoDB Operations": {
+    "Data Security": {
+      "question": "When creating a user in MongoDB, which role allows both reading and writing data?",
+      "options": [
+        "readOnly",
+        "dbAdmin",
+        "readWrite",
+        "root"
+      ],
+      "answer": "readWrite"
+    },
+    "Backups": {
+      "question": "Which utility is used to create a binary export of a MongoDB database?",
+      "options": [
+        "mongodump",
+        "mongoexport",
+        "mongosave",
+        "mongobackup"
+      ],
+      "answer": "mongodump"
+    }
+  },
+  "React Development": {
+    "Tooling": {
+      "question": "What is currently considered the fastest tool for initializing a modern React application as per the guide?",
+      "options": [
+        "Create React App (CRA)",
+        "Vite",
+        "Next.js",
+        "Webpack CLI"
+      ],
+      "answer": "Vite"
+    },
+    "Styling": {
+      "question": "Which command initializes the configuration files (tailwind.config.js) for Tailwind CSS?",
+      "options": [
+        "npm install tailwindcss",
+        "npx tailwindcss init -p",
+        "npx create-tailwind-app",
+        "npm run build:css"
+      ],
+      "answer": "npx tailwindcss init -p"
+    }
+  }
+}

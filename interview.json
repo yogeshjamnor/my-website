@@ -1,0 +1,32 @@
+{
+  "Behavioral": {
+    "Conflict Resolution": {
+      "notes": "Addressing a disagreement with a colleague or lead.",
+      "response": "Use the STAR method: Describe a specific situation, explain the task, the empathetic action you took, and the positive result."
+    },
+    "Weakness Question": {
+      "notes": "Handling the 'What is your greatest weakness?' trap.",
+      "response": "Identify a genuine technical gap you had, explain the steps you took to bridge it, and highlight your current proficiency."
+    }
+  },
+  "System Design": {
+    "Scalability": {
+      "notes": "Explaining how to handle 10x traffic growth.",
+      "response": "Discuss horizontal scaling (adding nodes), implementing load balancers, and using CDN/caching layers like Redis."
+    },
+    "Database Choice": {
+      "notes": "Justifying SQL vs. NoSQL.",
+      "response": "Relational (SQL) for structured data and ACID compliance; Non-relational (NoSQL) for high-write volume and flexible schemas."
+    }
+  },
+  "React & Frontend": {
+    "Virtual DOM": {
+      "notes": "Explaining why React is fast.",
+      "response": "React creates a lightweight copy of the UI; it diffs the changes and updates only the necessary parts of the real DOM."
+    },
+    "State Management": {
+      "notes": "When to use Context API vs. Redux.",
+      "response": "Use Context for low-frequency updates (themes, auth); use Redux for complex, high-frequency global state shared across many components."
+    }
+  }
+}
